@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image">
+          <img src="images/Biake.png" alt="Product Name">
+        </div>
+        <div class="product-details">
+          <h3 class="product-name">Product Name</h3>
+          <p class="product-price">$99.99</p>
+          <p class="product-stock in-stock">In Stock</p>
+          <p class="product-description">Short description of the product goes here. It’s concise and informative.</p>
+          <div class="cart-actions">
+            <button class="remove-cart" onclick="updateCartCount(-1)"> - </button>
+            <span id="cart-count">0</span>
+            <button class="add-cart" onclick="updateCartCount(1)"> + </button>
+          </div><br>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+      
+      
+    <script src="index.js"></script>
+</body>
+</html>
